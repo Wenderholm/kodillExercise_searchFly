@@ -13,8 +13,17 @@ public class Main {
 //        fldb.displayFlightsFromCity("Warsaw");
 //        fldb.displayFlightsToCity("Warsaw");
 
-        ArrayList<String> cities = fldb.cities();
-        System.out.println(cities);
+//        ArrayList<String> cities = fldb.cities();
+//        System.out.println(cities);
+//        Flight cheapestFlight = fldb.getCheapestFlight();
+//        System.out.println(cheapestFlight);
+//        Flight warsaw = fldb.getCheapestFlightFromCity("Warsaw");
+//        System.out.println("the cheapest flight from warsaw " + warsaw);
+
+//        this.flights.add(new Flight("Warsaw", "Paris",120));
+//    this.flights.add(new Flight("Paris", "Madrid",180));
+        ArrayList<Flight> flight = fldb.getFlight("Warsaw", "Madrid");
+        fldb.displayFlights(flight);
     }
 
 //    private static void isDivided(int start, int end) {
