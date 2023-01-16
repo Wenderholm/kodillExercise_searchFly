@@ -1,5 +1,7 @@
 package project;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,9 +9,12 @@ public class Main {
 //        reverseMethod(5,-2);
 
         FlyDatabase fldb = new FlyDatabase();
+        fldb.FlightDatabase();
+//        fldb.displayFlightsFromCity("Warsaw");
+//        fldb.displayFlightsToCity("Warsaw");
 
-        fldb.checkIfFlightExists("Paris", "Berlin");
-
+        ArrayList<String> cities = fldb.cities();
+        System.out.println(cities);
     }
 
 //    private static void isDivided(int start, int end) {
